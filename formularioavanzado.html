@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario avanzado</title>
+</head>
+<body>
+    <h1>Formulario avanzado</h1>
+    <h2>Datos Personales</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" value="Ingrese su nombre" readonly><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Ingrese su email"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" placeholder="Ingrese su edad"><br><br>
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" placeholder="Ingrese su número de celular"><br><br>
+        <label for="foto">Sube tu foto:</label>
+        <input type="file" id="foto"><br><br>
+        <label for="nacimiento">Nacimiento:</label>
+        <input type="date" id="nacimiento"><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+    </form>
+    <br>
+    <hr>
+    <form>
+        <H2>Selección Personal</H2>
+        <label for="color">Color:</label>
+        <select id="color" required>
+            <option value="">Seleccione un color</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Negro">Negro</option>
+            <option value="Blanco">Blanco</option>
+            
+        </select><br><br>
+
+        <label for="frutas">Frutas:</label>
+        <select id="frutas" multiple required>
+            <option value="Manzana">Manzana</option>
+            <option value="Plátano">Plátano</option>
+            <option value="Mango">Mango</option>
+            <option value="Frutilla">Frutilla</option>
+        </select><br><br>
+
+        <label for="ciudad">Ciudad:</label>
+        <input list="ciudades" id="ciudad" required>
+        <datalist id="ciudades">
+            <option value="Madrid">
+            <option value="Barcelona">
+            <option value="Valencia">
+            <option value="Sevilla">
+        </datalist><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <h2>Selección de materias</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required placeholder="Ingrese su nombre"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Ingrese su email"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required placeholder="Ingrese su edad"><br><br>
+        <label for="materias">Materias:</label>
+
+        <select id="materias" multiple required>
+            <option value="Maquetación web">Maquetación web</option>
+            <option value="Arqitectura tipográfica">Arqitectura tipográfica</option>
+            <option value="Fotografía">Fotografía</option>
+            <option value="Identidad visual">Identidad visual</option>
+        </select>
+        <label for="Semestre">Semestre:</label>
+        <select id="Semestre" multiple required>
+            <option value="1er. Semestre">1er. Semestre</option>
+            <option value="2er. Semestre">2er. Semestre</option>
+            <option value="3er. Semestre">3er. Semestre</option>
+            <option value="4er. Semestre">4er. Semestre</option>
+        </select>
+        <br><br>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" placeholder="Ingrese sus comentarios"></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+
+    <a href="../index.html">volver a la pagina principal</a>
+</body>
+</html>

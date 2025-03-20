@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributo popover</title>
+</head>
+<body>
+    <html>
+        <head>
+            <title>Despistaos</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                }
+                
+                .popover {
+                    position: relative;
+                    display: inline-block;
+                }
+                
+                .popover .popover-text {
+                    visibility: hidden;
+                    width: 200px;
+                    background-color: #555;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 125%;
+                    left: 50%;
+                    margin-left: -60px;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                }
+                
+                .popover .popover-text::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #555 transparent transparent transparent;
+                }
+                
+                .popover:hover .popover-text {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                
+                h1 {
+                    text-align: center;
+                    color: #0d0b0b;
+                }
+                
+                .container {
+                    width: 80%;
+                    margin: 40px auto;
+                    background-color: #b7d6e3;
+                    padding: 20px;
+                    border: 1px solid #a5c9e4;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Despistaos</h1>
+                <p>Despistaos es un grupo musical español de pop-rock formado en 2003 en Madrid.</p>
+                <button class="popover">Más información
+                    <span class="popover-text">Despistaos es un grupo musical español de pop-rock formado en 2003 en Madrid. Han lanzado varios álbumes y han tenido grandes éxitos como 'La distancia' y 'No te rindas'.</span>
+                </button>
+                <h2>Discografía</h2>
+                <ul>
+                    <li>Despistaos (2004)</li>
+                    <li>El álbum (2006)</li>
+                    <li>La distancia (2008)</li>
+                    <li>Estoy prohibido (2011)</li>
+                    <li>Bendito tú (2014)</li>
+                </ul>
+            </div>
+        </body>
+    <br>
+    <hr>
+    <a href="../index.html">volver a la pagina principal</a>
+</body>
+</html>
